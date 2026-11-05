@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: エージェントはパスワードを見ません
 ```
 
+## デモ
+
+| ログイン (ユーザ名とパスワード) | 2段階認証コード |
+|---|---|
+| ![ログイン (ユーザ名とパスワード)](docs/demo/login.gif) | ![2段階認証コード](docs/demo/otp.gif) |
+
+個人情報フォーム (欄ごとに `1shot info auto`)
+
+![個人情報フォーム (欄ごとに `1shot info auto`)](docs/demo/form.gif)
+
 ## できること
 
 | 機能 | 説明 |

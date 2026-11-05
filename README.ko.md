@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: 에이전트는 비밀번호를 보지 않습니다
 ```
 
+## 데모
+
+| 로그인 (아이디와 비밀번호) | 2단계 인증 코드 |
+|---|---|
+| ![로그인 (아이디와 비밀번호)](docs/demo/login.gif) | ![2단계 인증 코드](docs/demo/otp.gif) |
+
+개인정보 양식 (칸마다 `1shot info auto`)
+
+![개인정보 양식 (칸마다 `1shot info auto`)](docs/demo/form.gif)
+
 ## 무엇을 하나요
 
 | 기능 | 설명 |

@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: Der Agent sieht das Passwort nie
 ```
 
+## Demo
+
+| Anmeldung (Benutzername und Passwort) | Zwei-Faktor-Code |
+|---|---|
+| ![Anmeldung (Benutzername und Passwort)](docs/demo/login.gif) | ![Zwei-Faktor-Code](docs/demo/otp.gif) |
+
+Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)
+
+![Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)](docs/demo/form.gif)
+
 ## Was 1shot macht
 
 | Funktion | Beschreibung |

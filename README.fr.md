@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: L'agent ne voit pas le mot de passe
 ```
 
+## Démo
+
+| Connexion (identifiant et mot de passe) | Code à deux étapes |
+|---|---|
+| ![Connexion (identifiant et mot de passe)](docs/demo/login.gif) | ![Code à deux étapes](docs/demo/otp.gif) |
+
+Formulaire d'informations personnelles (`1shot info auto` dans chaque champ)
+
+![Formulaire d'informations personnelles (`1shot info auto` dans chaque champ)](docs/demo/form.gif)
+
 ## Fonctions
 
 | Fonction | Description |

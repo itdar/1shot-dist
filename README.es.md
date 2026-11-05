@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: El agente no ve la contraseña
 ```
 
+## Demostración
+
+| Inicio de sesión (usuario y contraseña) | Código de dos pasos |
+|---|---|
+| ![Inicio de sesión (usuario y contraseña)](docs/demo/login.gif) | ![Código de dos pasos](docs/demo/otp.gif) |
+
+Formulario de datos personales (`1shot info auto` en cada campo)
+
+![Formulario de datos personales (`1shot info auto` en cada campo)](docs/demo/form.gif)
+
 ## Qué hace
 
 | Función | Descripción |

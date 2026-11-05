@@ -37,6 +37,16 @@ sequenceDiagram
     Note over A,K: The agent never sees the password
 ```
 
+## Demo
+
+| Log in (user name and password) | Two-step code |
+|---|---|
+| ![Log in (user name and password)](docs/demo/login.gif) | ![Two-step code](docs/demo/otp.gif) |
+
+Personal info form (`1shot info auto` in each field)
+
+![Personal info form (`1shot info auto` in each field)](docs/demo/form.gif)
+
 ## What it does
 
 | Feature | Description |
