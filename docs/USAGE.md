@@ -160,9 +160,11 @@ entries:
 ```bash
 1shot info set addr --label "집 주소" --domain www.applyhome.co.kr   # 값은 터미널에서 묻습니다 (화면에 보이지 않음)
 1shot info set career --label "경력 요약" --reveal allow --stdin < career.txt
-1shot info list           # 에이전트용: id, 이름, 규칙만
+1shot info list           # 에이전트용: id, 이름, 종류, 규칙만
+1shot info auto           # 에이전트용: 칸의 이름표를 읽고 맞는 항목(과 조각)을 골라 입력
 1shot info fill addr      # 에이전트용: 포커스된 칸에 입력
 1shot info get career     # 에이전트용: allow 항목만 출력 (ask는 Touch ID 뒤)
+1shot info get            # 에이전트용: allow 항목 전체를 JSON 하나로 출력
 ```
 
 | `reveal` | 에이전트 | 쓰임 |
@@ -171,10 +173,37 @@ entries:
 | `ask` | Touch ID 승인 뒤 `info get` | 가족 사항 |
 | `allow` | `info get`으로 읽음 | 경력, 자격증 (자기소개서 작성) |
 
-- 입력 대상: 알려진 브라우저의 https 페이지 텍스트 칸만.
+- 입력 대상: 알려진 브라우저의 https 페이지에 있는 텍스트 칸, 비밀번호 칸, 목록(`select`), 라디오 버튼, 체크 박스. 날짜 선택기(`type=date`)는 지원하지 않습니다.
+- 목록: 1shot이 값을 입력해 옵션을 고르고, 고른 옵션이 값과 같은지 확인합니다. `03`과 `3월`처럼 숫자가 같으면 같은 값으로 봅니다.
+- 라디오 버튼: 값과 같은 이름의 버튼을 누릅니다. 체크 박스: 값이 `예`/`yes`/`1`이면 켜고, `아니오`/`no`/`0`이면 끕니다.
 - `--domain`을 정하면 그 사이트에만 승인 없이 입력합니다. 정하지 않으면 입력할 때마다 사이트 이름이 적힌 Touch ID 창이 뜹니다.
 - 일반 텍스트 칸에 입력한 값은 화면에 보입니다. 화면을 볼 수 있는 에이전트는 입력 뒤에 읽을 수 있습니다([SECURITY.md](../SECURITY.md) 남은 위험 10).
 - 앱의 **개인정보** 화면에서도 관리합니다.
+
+### 조각과 형식 (`--part`, `--format`)
+
+값의 종류(`kind`)가 조각을 정합니다. 종류를 정하지 않으면 id와 이름으로 추측합니다(`phone`, `birth`, "주민등록번호" 등). `1shot info set <id> --kind phone`으로 정할 수 있습니다.
+
+| `kind` | 조각 | 예 (값 `010-1234-5678`, `1990-01-02`, `900102-1234567`) |
+|---|---|---|
+| `phone` | 3개 | `--part 2` → `1234` |
+| `date` | 3개 (년, 월, 일) | `--part 2` → `01`, `--part 2 --format nozero` → `1` |
+| `rrn` | 2개 (앞 6자리, 뒤 7자리) | `--part 2` → 뒤 7자리 (비밀번호 칸에도 입력) |
+| `text` | `-` `.` `/` 공백으로 나눈 조각 | |
+
+`--format`: `digits`(숫자만), `dash`, `dot`, `slash`, `space`, `plain`(구분 없음), `nozero`(앞의 0 빼기). 쉼표로 여러 개를 씁니다. 예: `1shot info fill birth --format dot,nozero` → `1990.1.2`.
+
+### `info auto`
+
+에이전트가 칸을 누르고 `1shot info auto`를 실행합니다. 1shot이 칸의 이름표, 설명, placeholder, 앞의 글자, 표 머리글, 요소 id를 읽고 항목을 고릅니다.
+
+- `[010] - [1234] - [5678]`처럼 기호만 사이에 둔 칸 줄은 위치로 조각을 고릅니다. `[1990]년 [1]월 [2]일`도 같습니다.
+- "가운데 자리", "뒷자리", "연도" 같은 말이나 `hp2` 같은 id 숫자로도 조각을 고릅니다.
+- placeholder가 `YYYY.MM.DD`, `010-0000-0000`, "'-' 없이 숫자만"이면 그 형식으로 입력합니다.
+- 맞는 항목이 없거나 둘 이상이면 입력하지 않고 `fail: <이유>`와 후보를 돌려줍니다. 에이전트는 `info fill <id>`로 고릅니다.
+- `--dry-run`: 입력하지 않고 고른 결과만 보여 줍니다.
+
+브라우저가 `autocomplete`, `name`, `maxlength` 속성을 접근성 API로 알려 주지 않으므로 1shot은 이 속성을 쓰지 않습니다.
 
 ## 기기 간 동기화
 

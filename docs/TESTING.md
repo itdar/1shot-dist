@@ -19,4 +19,7 @@
 | `auth: biometric/password` | 시험하지 못했습니다. 사람의 지문이 필요합니다 |
 | `brew install --cask` (로컬 tap) | 통과. 앱과 `1shot` 명령이 설치되고, Gatekeeper가 막지 않습니다 |
 | UI: 항목 수정, 저장, 비밀번호 저장, 그 뒤 Chrome에 입력 | 통과 |
+| 개인정보 `info auto` (Safari, Chrome 로컬 한국어 양식 15칸) | 통과. 성명, 휴대폰 3칸(목록 + 텍스트 2칸), `[년] [월] [일]` 목록 3개, 주민번호 앞·뒤(비밀번호 칸), 학력 목록, 성별 라디오, 동의 체크 박스, 이메일, `YYYY.MM.DD` 한 칸 생일. 검색 칸은 맞는 항목이 없어 입력하지 않음 |
+| 개인정보 날짜 선택기(`type=date`) | 지원하지 않음. 두 브라우저 모두 키 입력 결과가 일정하지 않았습니다. `fail`을 돌려줍니다 |
+| 브라우저가 알려 주는 칸 정보 (Safari, Chrome) | 이름표, `aria-label`, `title`, placeholder, 요소 id, 앞의 글자, `legend`는 읽힘. `autocomplete`, `name`, `maxlength`, `type=tel`은 읽히지 않음 |
 

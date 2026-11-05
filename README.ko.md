@@ -87,7 +87,7 @@ flowchart LR
 | `auto`, `fill`: 입력 | `add`, `new`, `rm`: 항목 저장과 삭제 |
 | `check`: 검사만 | `import`, `import-logins`: 가져오기 |
 | `list`: 항목 이름 보기 | `sync`, `store`: 동기화와 저장 위치 |
-| `info list`, `info fill`, `info get`: 개인정보 입력과 읽기(허용한 항목만) | `info set`, `info rm`: 개인정보 저장 |
+| `info list`, `info auto`, `info fill`, `info get`: 개인정보 입력과 읽기(허용한 항목만) | `info set`, `info rm`: 개인정보 저장 |
 
 에이전트는 Touch ID를 통과할 수 없습니다. 그래서 에이전트는 설정을 바꾸거나 비밀번호를 밖으로 보낼 수 없습니다.
 

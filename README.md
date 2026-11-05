@@ -87,7 +87,7 @@ If the field already has text, 1shot deletes it and types the new text. If a sit
 | `auto`, `fill`: type | `add`, `new`, `rm`: save and delete items |
 | `check`: check only | `import`, `import-logins`: import |
 | `list`: view item names | `sync`, `store`: sync and storage location |
-| `info list`, `info fill`, `info get`: type and read personal info (allowed items only) | `info set`, `info rm`: save personal info |
+| `info list`, `info auto`, `info fill`, `info get`: type and read personal info (allowed items only) | `info set`, `info rm`: save personal info |
 
 The agent cannot pass Touch ID. So the agent cannot change settings or send the password out.
 

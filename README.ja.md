@@ -87,7 +87,7 @@ flowchart LR
 | `auto`、`fill`: 入力 | `add`、`new`、`rm`: 項目の保存と削除 |
 | `check`: 検査のみ | `import`、`import-logins`: インポート |
 | `list`: 項目名の表示 | `sync`、`store`: 同期と保存場所 |
-| `info list`、`info fill`、`info get`: 個人情報の入力と読み取り(許可した項目のみ) | `info set`、`info rm`: 個人情報の保存 |
+| `info list`、`info auto`、`info fill`、`info get`: 個人情報の入力と読み取り(許可した項目のみ) | `info set`、`info rm`: 個人情報の保存 |
 
 エージェントはTouch IDを通過できません。そのため、エージェントは設定を変更したり、パスワードを外部に送信したりできません。
 

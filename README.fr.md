@@ -87,7 +87,7 @@ Si le champ contient déjà du texte, 1shot l'efface et saisit la nouvelle valeu
 | `auto`, `fill` : saisir | `add`, `new`, `rm` : enregistrer et supprimer des éléments |
 | `check` : vérifier seulement | `import`, `import-logins` : importer |
 | `list` : voir les noms des éléments | `sync`, `store` : synchronisation et emplacement de stockage |
-| `info list`, `info fill`, `info get` : saisir et lire les informations personnelles (éléments autorisés seulement) | `info set`, `info rm` : enregistrer les informations personnelles |
+| `info list`, `info auto`, `info fill`, `info get` : saisir et lire les informations personnelles (éléments autorisés seulement) | `info set`, `info rm` : enregistrer les informations personnelles |
 
 L'agent ne peut pas passer Touch ID. Il ne peut donc pas modifier les réglages ni envoyer le mot de passe à l'extérieur.
 

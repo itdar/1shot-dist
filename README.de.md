@@ -87,7 +87,7 @@ Wenn im Feld schon Text steht, löscht 1shot den Text und gibt neu ein. Wenn ein
 | `auto`, `fill`: eingeben | `add`, `new`, `rm`: Einträge speichern und löschen |
 | `check`: nur prüfen | `import`, `import-logins`: importieren |
 | `list`: Eintragsnamen anzeigen | `sync`, `store`: Synchronisierung und Speicherort |
-| `info list`, `info fill`, `info get`: persönliche Daten eingeben und lesen (nur freigegebene Einträge) | `info set`, `info rm`: persönliche Daten speichern |
+| `info list`, `info auto`, `info fill`, `info get`: persönliche Daten eingeben und lesen (nur freigegebene Einträge) | `info set`, `info rm`: persönliche Daten speichern |
 
 Ein Agent kann Touch ID nicht bestehen. Darum kann ein Agent keine Einstellungen ändern und kein Passwort nach außen senden.
 

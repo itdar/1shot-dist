@@ -87,7 +87,7 @@ Si el campo ya tiene texto, 1shot lo borra y escribe de nuevo. Si un sitio tiene
 | `auto`, `fill`: escribir | `add`, `new`, `rm`: guardar y eliminar elementos |
 | `check`: solo comprobar | `import`, `import-logins`: importar |
 | `list`: ver los nombres de los elementos | `sync`, `store`: sincronización y ubicación de almacenamiento |
-| `info list`, `info fill`, `info get`: escribir y leer datos personales (solo los elementos permitidos) | `info set`, `info rm`: guardar datos personales |
+| `info list`, `info auto`, `info fill`, `info get`: escribir y leer datos personales (solo los elementos permitidos) | `info set`, `info rm`: guardar datos personales |
 
 El agente no puede superar Touch ID. Por eso el agente no puede cambiar los ajustes ni enviar la contraseña al exterior.
 
