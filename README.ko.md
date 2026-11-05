@@ -9,12 +9,11 @@
 
 ```bash
 brew install --cask itdar/tap/1shot
-1shot doctor
 ```
 
 - 요구 사항: Apple Silicon, macOS 14 이상
 - 직접 받기: [Releases](https://github.com/itdar/1shot-dist/releases/latest)에서 `.dmg`를 받습니다. 앱의 **터미널 명령 설치**를 누릅니다.
-- 권한: 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 터미널(또는 에이전트 앱)과 1shot을 켭니다.
+- 권한: 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 터미널(또는 에이전트 앱)과 1shot을 켭니다. 동작하지 않으면 `1shot doctor`로 권한 상태를 확인합니다.
 
 
 1shot은 저장된 아이디와 비밀번호를 로그인 칸에 입력합니다.

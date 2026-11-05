@@ -9,12 +9,11 @@
 
 ```bash
 brew install --cask itdar/tap/1shot
-1shot doctor
 ```
 
 - 要件: Apple Silicon、macOS 14以降
 - 直接ダウンロード: [Releases](https://github.com/itdar/1shot-dist/releases/latest)から `.dmg` をダウンロードします。アプリの**ターミナルコマンドをインストール**をクリックします。
-- 権限: システム設定 > プライバシーとセキュリティ > アクセシビリティで、ターミナル(またはエージェントアプリ)と1shotをオンにします。
+- 権限: システム設定 > プライバシーとセキュリティ > アクセシビリティで、ターミナル(またはエージェントアプリ)と1shotをオンにします。 動かない場合は `1shot doctor` で権限の状態を確認します。
 
 
 1shotは、保存したIDとパスワードをログイン欄に入力します。

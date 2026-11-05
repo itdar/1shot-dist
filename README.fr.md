@@ -9,12 +9,11 @@
 
 ```bash
 brew install --cask itdar/tap/1shot
-1shot doctor
 ```
 
 - Prérequis : Apple Silicon, macOS 14 ou ultérieur
 - Téléchargement direct : téléchargez le fichier `.dmg` depuis [Releases](https://github.com/itdar/1shot-dist/releases/latest). Dans l'app, cliquez sur **Installer la commande Terminal**.
-- Autorisation : dans Réglages Système > Confidentialité et sécurité > Accessibilité, activez le Terminal (ou l'app de l'agent) et 1shot.
+- Autorisation : dans Réglages Système > Confidentialité et sécurité > Accessibilité, activez le Terminal (ou l'app de l'agent) et 1shot. Si cela ne fonctionne pas, lancez `1shot doctor` pour voir l'état des autorisations.
 
 
 1shot saisit l'identifiant et le mot de passe enregistrés dans les champs de connexion.
