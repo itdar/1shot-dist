@@ -3,7 +3,7 @@
 [English](README.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md) · [日本語](README.ja.md)
 
 
-> Lets an LLM agent log in on macOS without seeing the password.
+> Lässt einen LLM-Agenten sich unter macOS anmelden, ohne das Passwort zu sehen.
 
 ## Installation
 
@@ -14,6 +14,16 @@ brew install --cask itdar/tap/1shot
 - Voraussetzungen: Apple Silicon, macOS 14 oder neuer
 - Direkter Download: Lade die `.dmg` von [Releases](https://github.com/itdar/1shot-dist/releases/latest) herunter. Klicke in der App auf **Terminal-Befehl installieren**.
 - Berechtigung: Aktiviere unter Systemeinstellungen > Datenschutz & Sicherheit > Bedienungshilfen das Terminal (oder die Agent-App) und 1shot. Wenn es nicht funktioniert, zeigt `1shot doctor` den Stand der Berechtigungen.
+
+## Demo
+
+Anmeldung (Benutzername und Passwort)
+
+![Anmeldung (Benutzername und Passwort)](docs/demo/login.gif)
+
+Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)
+
+![Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)](docs/demo/form.gif)
 
 
 1shot gibt gespeicherte Benutzernamen und Passwörter in Anmeldefelder ein.
@@ -36,16 +46,6 @@ sequenceDiagram
     O-->>A: ok
     Note over A,K: Der Agent sieht das Passwort nie
 ```
-
-## Demo
-
-| Anmeldung (Benutzername und Passwort) | Zwei-Faktor-Code |
-|---|---|
-| ![Anmeldung (Benutzername und Passwort)](docs/demo/login.gif) | ![Zwei-Faktor-Code](docs/demo/otp.gif) |
-
-Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)
-
-![Formular mit persönlichen Daten (`1shot info auto` in jedem Feld)](docs/demo/form.gif)
 
 ## Was 1shot macht
 

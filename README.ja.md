@@ -3,7 +3,7 @@
 [English](README.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md) · [日本語](README.ja.md)
 
 
-> Lets an LLM agent log in on macOS without seeing the password.
+> LLMエージェントがパスワードを見ずにmacOSでログインできるようにします。
 
 ## インストール
 
@@ -14,6 +14,16 @@ brew install --cask itdar/tap/1shot
 - 要件: Apple Silicon、macOS 14以降
 - 直接ダウンロード: [Releases](https://github.com/itdar/1shot-dist/releases/latest)から `.dmg` をダウンロードします。アプリの**ターミナルコマンドをインストール**をクリックします。
 - 権限: システム設定 > プライバシーとセキュリティ > アクセシビリティで、ターミナル(またはエージェントアプリ)と1shotをオンにします。 動かない場合は `1shot doctor` で権限の状態を確認します。
+
+## デモ
+
+ログイン (ユーザ名とパスワード)
+
+![ログイン (ユーザ名とパスワード)](docs/demo/login.gif)
+
+個人情報フォーム (欄ごとに `1shot info auto`)
+
+![個人情報フォーム (欄ごとに `1shot info auto`)](docs/demo/form.gif)
 
 
 1shotは、保存したIDとパスワードをログイン欄に入力します。
@@ -36,16 +46,6 @@ sequenceDiagram
     O-->>A: ok
     Note over A,K: エージェントはパスワードを見ません
 ```
-
-## デモ
-
-| ログイン (ユーザ名とパスワード) | 2段階認証コード |
-|---|---|
-| ![ログイン (ユーザ名とパスワード)](docs/demo/login.gif) | ![2段階認証コード](docs/demo/otp.gif) |
-
-個人情報フォーム (欄ごとに `1shot info auto`)
-
-![個人情報フォーム (欄ごとに `1shot info auto`)](docs/demo/form.gif)
 
 ## できること
 

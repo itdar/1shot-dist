@@ -3,7 +3,7 @@
 [English](README.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md) · [日本語](README.ja.md)
 
 
-> Lets an LLM agent log in on macOS without seeing the password.
+> LLM 에이전트가 비밀번호를 보지 않고 macOS에서 로그인하게 합니다.
 
 ## 설치
 
@@ -14,6 +14,16 @@ brew install --cask itdar/tap/1shot
 - 요구 사항: Apple Silicon, macOS 14 이상
 - 직접 받기: [Releases](https://github.com/itdar/1shot-dist/releases/latest)에서 `.dmg`를 받습니다. 앱의 **터미널 명령 설치**를 누릅니다.
 - 권한: 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 터미널(또는 에이전트 앱)과 1shot을 켭니다. 동작하지 않으면 `1shot doctor`로 권한 상태를 확인합니다.
+
+## 데모
+
+로그인 (아이디와 비밀번호)
+
+![로그인 (아이디와 비밀번호)](docs/demo/login.gif)
+
+개인정보 양식 (칸마다 `1shot info auto`)
+
+![개인정보 양식 (칸마다 `1shot info auto`)](docs/demo/form.gif)
 
 
 1shot은 저장된 아이디와 비밀번호를 로그인 칸에 입력합니다.
@@ -36,16 +46,6 @@ sequenceDiagram
     O-->>A: ok
     Note over A,K: 에이전트는 비밀번호를 보지 않습니다
 ```
-
-## 데모
-
-| 로그인 (아이디와 비밀번호) | 2단계 인증 코드 |
-|---|---|
-| ![로그인 (아이디와 비밀번호)](docs/demo/login.gif) | ![2단계 인증 코드](docs/demo/otp.gif) |
-
-개인정보 양식 (칸마다 `1shot info auto`)
-
-![개인정보 양식 (칸마다 `1shot info auto`)](docs/demo/form.gif)
 
 ## 무엇을 하나요
 

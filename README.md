@@ -15,6 +15,16 @@ brew install --cask itdar/tap/1shot
 - Direct download: Download the `.dmg` from [Releases](https://github.com/itdar/1shot-dist/releases/latest). Click **Install terminal command** in the app.
 - Permission: Go to System Settings > Privacy & Security > Accessibility. Turn on Terminal (or your agent app) and 1shot. If it does not work, run `1shot doctor` to see the permission state.
 
+## Demo
+
+Log in (user name and password)
+
+![Log in (user name and password)](docs/demo/login.gif)
+
+Personal info form (`1shot info auto` in each field)
+
+![Personal info form (`1shot info auto` in each field)](docs/demo/form.gif)
+
 
 1shot types a saved ID and password into a login field.
 The agent only runs a command. The agent gets only `ok` or `fail: <reason>` as the result.
@@ -36,16 +46,6 @@ sequenceDiagram
     O-->>A: ok
     Note over A,K: The agent never sees the password
 ```
-
-## Demo
-
-| Log in (user name and password) | Two-step code |
-|---|---|
-| ![Log in (user name and password)](docs/demo/login.gif) | ![Two-step code](docs/demo/otp.gif) |
-
-Personal info form (`1shot info auto` in each field)
-
-![Personal info form (`1shot info auto` in each field)](docs/demo/form.gif)
 
 ## What it does
 

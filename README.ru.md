@@ -3,7 +3,7 @@
 [English](README.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Русский](README.ru.md) · [日本語](README.ja.md)
 
 
-> Lets an LLM agent log in on macOS without seeing the password.
+> Позволяет LLM-агенту входить в систему на macOS, не видя пароль.
 
 ## Установка
 
@@ -14,6 +14,16 @@ brew install --cask itdar/tap/1shot
 - Требования: Apple Silicon, macOS 14 и новее
 - Прямая загрузка: скачайте `.dmg` со страницы [Releases](https://github.com/itdar/1shot-dist/releases/latest). В приложении нажмите **Установить команду для терминала**.
 - Разрешения: в Системные настройки > Конфиденциальность и безопасность > Универсальный доступ включите терминал (или приложение агента) и 1shot. Если не работает, выполните `1shot doctor`, чтобы увидеть состояние разрешений.
+
+## Демо
+
+Вход (логин и пароль)
+
+![Вход (логин и пароль)](docs/demo/login.gif)
+
+Форма с личными данными (`1shot info auto` в каждом поле)
+
+![Форма с личными данными (`1shot info auto` в каждом поле)](docs/demo/form.gif)
 
 
 1shot вводит сохранённые логин и пароль в поля входа.
@@ -36,16 +46,6 @@ sequenceDiagram
     O-->>A: ok
     Note over A,K: Агент не видит пароль
 ```
-
-## Демо
-
-| Вход (логин и пароль) | Код двухэтапной проверки |
-|---|---|
-| ![Вход (логин и пароль)](docs/demo/login.gif) | ![Код двухэтапной проверки](docs/demo/otp.gif) |
-
-Форма с личными данными (`1shot info auto` в каждом поле)
-
-![Форма с личными данными (`1shot info auto` в каждом поле)](docs/demo/form.gif)
 
 ## Что делает 1shot
 
