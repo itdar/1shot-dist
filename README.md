@@ -89,6 +89,8 @@ If you changed the password on the site, press ⇧⌘2 or click **Edit** next to
 
 If the field already has text, 1shot deletes it and types the new text. If a site has more than one account, run `1shot matches` to see the list. Then run `1shot fill <id> login` to choose one. The button next to the field in the app and the hotkey show an ID list menu.
 
+On a two-step code page, `1shot auto` (and ⇧⌘1) types the code when the entry has a stored code and the field asks for a code.
+
 ## What the agent can do
 
 | Agent can do | Human only (Touch ID or Mac password) |

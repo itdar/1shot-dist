@@ -89,6 +89,8 @@ Si cambias la contraseña en el sitio, pulsa ⇧⌘2 o haz clic en **Editar** ju
 
 Si el campo ya tiene texto, 1shot lo borra y escribe de nuevo. Si un sitio tiene varias cuentas, consulta la lista con `1shot matches` y elige con `1shot fill <id> login`. El botón junto al campo y el atajo de la app muestran un menú con la lista de usuarios.
 
+En una página de código de 2 pasos, `1shot auto` (y ⇧⌘1) escribe el código si el elemento tiene un código guardado y el campo pide un código.
+
 ## Qué puede hacer el agente
 
 | El agente puede | Solo una persona puede (Touch ID o contraseña del Mac) |

@@ -89,6 +89,8 @@ Wenn du das Passwort auf der Webseite geändert hast, drücke im Anmeldefeld ⇧
 
 Wenn im Feld schon Text steht, löscht 1shot den Text und gibt neu ein. Wenn eine Webseite mehrere Konten hat, zeige die Liste mit `1shot matches` an und wähle mit `1shot fill <id> login`. Die Taste neben dem Feld und das Tastenkürzel in der App zeigen ein Menü mit der Kontoliste.
 
+Auf einer Seite für den 2-Schritt-Code gibt `1shot auto` (und ⇧⌘1) den Code ein, wenn der Eintrag einen gespeicherten Code hat und das Feld nach einem Code fragt.
+
 ## Was der Agent tun darf
 
 | Agent erlaubt | Nur Mensch (Touch ID oder Mac-Passwort) |

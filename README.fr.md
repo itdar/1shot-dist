@@ -89,6 +89,8 @@ Si vous changez le mot de passe sur le site, appuyez sur ⇧⌘2 ou cliquez sur 
 
 Si le champ contient déjà du texte, 1shot l'efface et saisit la nouvelle valeur. Si un site a plusieurs comptes, affichez la liste avec `1shot matches` et choisissez avec `1shot fill <id> login`. Le bouton près du champ et le raccourci de l'app affichent un menu de la liste des identifiants.
 
+Sur une page de code à 2 étapes, `1shot auto` (et ⇧⌘1) saisit le code si l'élément a un code enregistré et si le champ demande un code.
+
 ## Ce que l'agent peut faire
 
 | L'agent peut | Seul un humain peut (Touch ID ou mot de passe du Mac) |
