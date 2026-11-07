@@ -67,10 +67,10 @@ flowchart LR
     S["① Save<br/>1shot button<br/>next to the login field"] --> C["② Connect<br/>1shot agent claude"] --> U["③ Use<br/>The agent<br/>runs 1shot auto"]
 ```
 
-**① Save.** Click a login field in the browser. A **Save to 1shot** button appears next to the field. Click the button and type the ID and password.
+**① Save.** Click a login field in the browser. A button appears next to the field: **⇧⌘1 Save** on a new site, **⇧⌘1 Type │ ⇧⌘2 Edit** on a saved one. Click **Save** and type the ID and password.
 Other ways: the ⇧⌘1 hotkey, `1shot new` in the terminal, or CSV import from another app.
 
-If you changed the password on the site, press ⇧⌘2 (change password) in the login field and enter the new password. 1shot does not read the values typed in the page. It cannot find out the changed password by itself.
+If you changed the password on the site, press ⇧⌘2 or click **Edit** next to the login field, then enter the new password. If you press ⇧⌘1 again on the same login form within 90 seconds, 1shot asks whether the login failed and offers to change the password. 1shot does not read the values typed in the page. It cannot find out the changed password by itself.
 
 **② Connect.** Install the skill and the permission rules in Claude Code.
 

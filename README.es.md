@@ -67,10 +67,10 @@ flowchart LR
     S["① Guardar<br/>Botón 1shot<br/>junto al campo"] --> C["② Conectar<br/>1shot agent claude"] --> U["③ Usar<br/>El agente<br/>ejecuta 1shot auto"]
 ```
 
-**① Guardar.** Haz clic en un campo de inicio de sesión en el navegador. Junto al campo aparece el botón **Guardar en 1shot**. Pulsa el botón y escribe el usuario y la contraseña.
+**① Guardar.** Haz clic en un campo de inicio de sesión en el navegador. Junto al campo aparece un botón: **⇧⌘1 Guardar** en un sitio nuevo, **⇧⌘1 Escribir │ ⇧⌘2 Editar** en uno guardado. Pulsa **Guardar** y escribe el usuario y la contraseña.
 Otras opciones: el atajo ⇧⌘1, `1shot new` en la terminal, o la importación de CSV desde otra app.
 
-Si cambias la contraseña en el sitio, pulsa ⇧⌘2 (cambiar contraseña) en el campo de inicio de sesión y escribe la nueva contraseña. 1shot no lee los valores escritos en la página. Por eso no detecta por sí solo que la contraseña cambió.
+Si cambias la contraseña en el sitio, pulsa ⇧⌘2 o haz clic en **Editar** junto al campo de inicio de sesión y escribe la nueva contraseña. Si vuelves a pulsar ⇧⌘1 en el mismo formulario en menos de 90 segundos, 1shot pregunta si falló el inicio de sesión y ofrece cambiar la contraseña. 1shot no lee los valores escritos en la página. Por eso no detecta por sí solo que la contraseña cambió.
 
 **② Conectar.** Instala en Claude Code el skill y las reglas de permisos.
 

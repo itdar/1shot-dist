@@ -67,10 +67,10 @@ flowchart LR
     S["① Enregistrer<br/>Bouton 1shot<br/>près du champ"] --> C["② Connecter<br/>1shot agent claude"] --> U["③ Utiliser<br/>L'agent exécute<br/>1shot auto"]
 ```
 
-**① Enregistrer.** Dans le navigateur, cliquez sur un champ de connexion. Le bouton **Enregistrer dans 1shot** apparaît près du champ. Cliquez sur le bouton, puis saisissez l'identifiant et le mot de passe.
+**① Enregistrer.** Dans le navigateur, cliquez sur un champ de connexion. Un bouton apparaît près du champ : **⇧⌘1 Enregistrer** sur un nouveau site, **⇧⌘1 Saisir │ ⇧⌘2 Modifier** sur un site enregistré. Cliquez sur **Enregistrer**, puis saisissez l'identifiant et le mot de passe.
 Autres méthodes : le raccourci ⇧⌘1, `1shot new` dans le Terminal, ou l'import CSV depuis une autre app.
 
-Si vous changez le mot de passe sur le site, appuyez sur ⇧⌘2 (changer le mot de passe) dans le champ de connexion et saisissez le nouveau mot de passe. 1shot ne lit pas les valeurs saisies dans la page. Il ne détecte donc pas seul le changement de mot de passe.
+Si vous changez le mot de passe sur le site, appuyez sur ⇧⌘2 ou cliquez sur **Modifier** près du champ de connexion, puis saisissez le nouveau mot de passe. Si vous appuyez de nouveau sur ⇧⌘1 dans le même formulaire en moins de 90 secondes, 1shot demande si la connexion a échoué et propose de changer le mot de passe. 1shot ne lit pas les valeurs saisies dans la page. Il ne détecte donc pas seul le changement de mot de passe.
 
 **② Connecter.** Installez le skill et les règles d'autorisation dans Claude Code.
 

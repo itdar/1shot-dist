@@ -67,10 +67,10 @@ flowchart LR
     S["① Speichern<br/>1shot-Taste<br/>neben dem Anmeldefeld"] --> C["② Verbinden<br/>1shot agent claude"] --> U["③ Nutzen<br/>Der Agent führt<br/>1shot auto aus"]
 ```
 
-**① Speichern.** Klicke im Browser auf ein Anmeldefeld. Neben dem Feld erscheint die Taste **In 1shot speichern**. Klicke auf die Taste und gib Benutzername und Passwort ein.
+**① Speichern.** Klicke im Browser auf ein Anmeldefeld. Neben dem Feld erscheint eine Taste: **⇧⌘1 Sichern** auf einer neuen Seite, **⇧⌘1 Eingeben │ ⇧⌘2 Ändern** auf einer gespeicherten. Klicke auf **Sichern** und gib Benutzername und Passwort ein.
 Andere Wege: Tastenkürzel ⇧⌘1, `1shot new` im Terminal, CSV-Import aus einer anderen App.
 
-Wenn du das Passwort auf der Webseite geändert hast, drücke im Anmeldefeld ⇧⌘2 (Passwort ändern) und gib das neue Passwort ein. 1shot liest keine Werte auf der Seite. Darum erkennt 1shot ein geändertes Passwort nicht selbst.
+Wenn du das Passwort auf der Webseite geändert hast, drücke im Anmeldefeld ⇧⌘2 oder klicke auf **Ändern** und gib das neue Passwort ein. Drückst du im selben Anmeldeformular innerhalb von 90 Sekunden erneut ⇧⌘1, fragt 1shot, ob die Anmeldung fehlgeschlagen ist, und bietet an, das Passwort zu ändern. 1shot liest keine Werte auf der Seite. Darum erkennt 1shot ein geändertes Passwort nicht selbst.
 
 **② Verbinden.** Installiere den Skill und die Berechtigungsregeln für Claude Code.
 
