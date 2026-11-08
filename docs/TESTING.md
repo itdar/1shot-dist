@@ -1,5 +1,14 @@
 # 시험 결과
 
+## 0.8.20 보안 수정 확인 (2026-11-08)
+
+| 시험 | 결과 |
+|---|---|
+| 서명 요구 조건 (`codesign -R`로 같은 문자열 확인) | Chrome(EQHXZ8M8AV), Edge(UBF8T346G9), Battle.net(G847MC6JZ5), Mac App Store 앱(Amphetamine): 통과. 다른 팀 ID: 거부. TextEdit: `anchor apple` 통과 |
+| 자체 서명한 가짜 앱 | 시험하지 못했습니다 |
+| 단위 테스트 (포트, 실행 옵션 대시 개수, 대소문자) | 통과 |
+| `auth: biometric/password` 입력 | 사람 시험 대기 |
+
 ## 결과 (2026-11-05, macOS 26.5.1)
 
 | 시험 | 결과 |

@@ -13,7 +13,7 @@ brew install --cask itdar/tap/1shot
 
 - 要件: Apple Silicon、macOS 14以降
 - 直接ダウンロード: [Releases](https://github.com/itdar/1shot-dist/releases/latest)から `.dmg` をダウンロードします。アプリの**ターミナルコマンドをインストール**をクリックします。
-- 権限: システム設定 > プライバシーとセキュリティ > アクセシビリティで、ターミナル(またはエージェントアプリ)と1shotをオンにします。 動かない場合は `1shot doctor` で権限の状態を確認します。
+- 権限: システム設定 > プライバシーとセキュリティ > アクセシビリティで、ターミナル(またはエージェントアプリ)、1shot、1shot-cliをオンにします。 動かない場合は `1shot doctor` で権限の状態を確認します。
 
 ## デモ
 
@@ -115,7 +115,7 @@ flowchart TD
     T -- はい --> P[Touch ID] --> I[1文字ずつ入力<br/>文字ごとにフォーカスを確認] --> L[記録を残す、ok]
 ```
 
-Webページは、既知のブラウザ(Safari、Chrome、Edge、Firefox、Brave、Arc)のhttpsページのみ許可します。
+Webページは、既知のブラウザ(Safari、Chrome、Edge、Firefox、Brave、Arc)のhttpsページのみ許可します。標準以外のポートのページは、項目にポートを書く必要があります(例: `nas.example.com:5001`)。
 
 ## デバイス間の同期
 
@@ -143,6 +143,7 @@ sequenceDiagram
 - ファイルは同期パスワードで暗号化します(age、scrypt)。フォルダとgitサーバには、暗号化されたファイルのみが存在します。
 - 取り込みは、1shotアプリの実行中のみ行います。
 - 別のMacがより新しく変更したファイルがある場合、自動送信は停止します。先に取り込んでから送信します。
+- 設定後の最初の送信は Touch ID を求め、フォルダを表示します。自動送信はその後から行います。
 
 詳しいコマンド: [使用ガイド](docs/USAGE.md)の「デバイス間の同期」。
 

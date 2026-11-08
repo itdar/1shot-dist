@@ -13,7 +13,7 @@ brew install --cask itdar/tap/1shot
 
 - Requirements: Apple Silicon, macOS 14 or later
 - Direct download: Download the `.dmg` from [Releases](https://github.com/itdar/1shot-dist/releases/latest). Click **Install terminal command** in the app.
-- Permission: Go to System Settings > Privacy & Security > Accessibility. Turn on Terminal (or your agent app) and 1shot. If it does not work, run `1shot doctor` to see the permission state.
+- Permission: Go to System Settings > Privacy & Security > Accessibility. Turn on Terminal (or your agent app), 1shot, and 1shot-cli. If it does not work, run `1shot doctor` to see the permission state.
 
 ## Demo
 
@@ -115,7 +115,7 @@ flowchart TD
     T -- Yes --> P[Touch ID] --> I[Type one character at a time<br/>Check focus for each character] --> L[Write log, ok]
 ```
 
-1shot allows only https pages in known browsers (Safari, Chrome, Edge, Firefox, Brave, Arc).
+1shot allows only https pages in known browsers (Safari, Chrome, Edge, Firefox, Brave, Arc). A page on a port that is not the default needs the port in the entry (for example `nas.example.com:5001`).
 
 ## Sync between devices
 
@@ -143,6 +143,7 @@ sequenceDiagram
 - 1shot encrypts the file with the sync password (age, scrypt). The folder and the git server hold only the encrypted file.
 - Import runs only while the 1shot app is running.
 - If another Mac changed the file more recently, automatic export stops. 1shot imports first, then exports.
+- After setup, the first export asks for Touch ID and shows the folder. Automatic export starts after that.
 
 For detailed commands, see "Sync between devices" in the [User guide](docs/USAGE.md).
 

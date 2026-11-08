@@ -13,7 +13,7 @@ brew install --cask itdar/tap/1shot
 
 - 요구 사항: Apple Silicon, macOS 14 이상
 - 직접 받기: [Releases](https://github.com/itdar/1shot-dist/releases/latest)에서 `.dmg`를 받습니다. 앱의 **터미널 명령 설치**를 누릅니다.
-- 권한: 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 터미널(또는 에이전트 앱)과 1shot을 켭니다. 동작하지 않으면 `1shot doctor`로 권한 상태를 확인합니다.
+- 권한: 시스템 설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 터미널(또는 에이전트 앱), 1shot, 1shot-cli를 켭니다. 동작하지 않으면 `1shot doctor`로 권한 상태를 확인합니다.
 
 ## 데모
 
@@ -115,7 +115,7 @@ flowchart TD
     T -- 예 --> P[Touch ID] --> I[한 글자씩 입력<br/>글자마다 포커스 확인] --> L[기록 남김, ok]
 ```
 
-웹 페이지는 알려진 브라우저(Safari, Chrome, Edge, Firefox, Brave, Arc)의 https 페이지만 허용합니다.
+웹 페이지는 알려진 브라우저(Safari, Chrome, Edge, Firefox, Brave, Arc)의 https 페이지만 허용합니다. 기본 포트가 아닌 페이지는 항목에 포트를 적어야 합니다(예: `nas.example.com:5001`).
 
 ## 기기 간 동기화
 
@@ -143,6 +143,7 @@ sequenceDiagram
 - 파일은 동기화 암호로 암호화합니다(age, scrypt). 폴더와 git 서버에는 암호화된 파일만 있습니다.
 - 가져오기는 1shot 앱이 실행 중일 때만 합니다.
 - 다른 Mac이 더 최근에 바꾼 파일이 있으면 자동 보내기는 멈춥니다. 먼저 가져온 뒤 보냅니다.
+- 설정한 뒤 첫 보내기는 Touch ID를 묻고 폴더를 보여 줍니다. 자동 보내기는 그다음부터 합니다.
 
 자세한 명령: [사용 설명서](docs/USAGE.md)의 "기기 간 동기화".
 

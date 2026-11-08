@@ -13,7 +13,7 @@ brew install --cask itdar/tap/1shot
 
 - Prérequis : Apple Silicon, macOS 14 ou ultérieur
 - Téléchargement direct : téléchargez le fichier `.dmg` depuis [Releases](https://github.com/itdar/1shot-dist/releases/latest). Dans l'app, cliquez sur **Installer la commande Terminal**.
-- Autorisation : dans Réglages Système > Confidentialité et sécurité > Accessibilité, activez le Terminal (ou l'app de l'agent) et 1shot. Si cela ne fonctionne pas, lancez `1shot doctor` pour voir l'état des autorisations.
+- Autorisation : dans Réglages Système > Confidentialité et sécurité > Accessibilité, activez le Terminal (ou l'app de l'agent), 1shot et 1shot-cli. Si cela ne fonctionne pas, lancez `1shot doctor` pour voir l'état des autorisations.
 
 ## Démo
 
@@ -115,7 +115,7 @@ flowchart TD
     T -- Oui --> P[Touch ID] --> I[Saisir caractère par caractère<br/>Vérifier le focus à chaque caractère] --> L[Écrire dans le journal, ok]
 ```
 
-Pour les pages web, 1shot accepte uniquement les pages https des navigateurs connus (Safari, Chrome, Edge, Firefox, Brave, Arc).
+Pour les pages web, 1shot accepte uniquement les pages https des navigateurs connus (Safari, Chrome, Edge, Firefox, Brave, Arc). Une page sur un port autre que celui par défaut demande le port dans l'élément (par exemple `nas.example.com:5001`).
 
 ## Synchronisation entre appareils
 
@@ -143,6 +143,7 @@ sequenceDiagram
 - 1shot chiffre le fichier avec le mot de passe de synchronisation (age, scrypt). Le dossier et le serveur git contiennent uniquement le fichier chiffré.
 - L'import se fait seulement si l'app 1shot est en cours d'exécution.
 - Si un autre Mac a modifié un fichier plus récemment, l'envoi automatique s'arrête. 1shot importe d'abord, puis envoie.
+- Après la configuration, le premier envoi demande Touch ID et montre le dossier. L'envoi automatique commence ensuite.
 
 Commandes détaillées : [Guide d'utilisation](docs/USAGE.md), section « Synchronisation entre appareils ».
 
