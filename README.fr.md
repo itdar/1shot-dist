@@ -102,6 +102,10 @@ Sur une page de code à 2 étapes, `1shot auto` (et ⇧⌘1) saisit le code si l
 
 L'agent ne peut pas passer Touch ID. Il ne peut donc pas modifier les réglages ni envoyer le mot de passe à l'extérieur.
 
+
+> [!IMPORTANT]
+> Par défaut, un nouvel élément est **sans authentification**. L'agent peut alors saisir ce mot de passe sans contrôle humain. 1shot saisit quand même uniquement dans l'app, le domaine et le champ qui correspondent. Pour les comptes importants (banque, e-mail, travail, cloud), choisissez **Touch ID** ou **Touch ID ou mot de passe du Mac** sur l'élément. Une personne approuve alors chaque saisie.
+
 ## Vérification avant saisie
 
 ```mermaid

@@ -102,6 +102,10 @@ Auf einer Seite für den 2-Schritt-Code gibt `1shot auto` (und ⇧⌘1) den Code
 
 Ein Agent kann Touch ID nicht bestehen. Darum kann ein Agent keine Einstellungen ändern und kein Passwort nach außen senden.
 
+
+> [!IMPORTANT]
+> Ein neuer Eintrag hat standardmäßig **keine Authentifizierung**. Dann kann der Agent dieses Passwort ohne menschliche Prüfung eingeben. 1shot gibt trotzdem nur in die passende App, Domain und das passende Feld ein. Wählen Sie für wichtige Konten (Bank, E-Mail, Arbeit, Cloud) im Eintrag **Touch ID** oder **Touch ID oder Mac-Passwort**. Dann bestätigt ein Mensch jede Eingabe.
+
 ## Prüfung vor der Eingabe
 
 ```mermaid

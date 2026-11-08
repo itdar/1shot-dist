@@ -53,4 +53,4 @@
 - 웹 항목에는 `match.domain`을 정확한 로그인 호스트로 설정하세요.
 - 에이전트에게 `~/.config/1shot/`과 `~/Library/Logs/1shot/` 쓰기 권한을 주지 마세요. Claude Code는 `1shot agent claude`가 이 규칙을 설치합니다.
 - 입력 기록을 가끔 확인하세요: `1shot log`.
-- 중요한 계정에는 `auth: biometric`을 쓰세요.
+- **중요한 계정(은행, 메일, 회사, 클라우드)에는 `auth: biometric` 또는 `auth: password`를 쓰세요.** 기본값 `none`은 에이전트가 사람 확인 없이 입력합니다. 입력 전 검사가 속는 경우(남은 위험 1, 6, 12)에 사람이 막을 수 있는 것은 이 인증뿐입니다.

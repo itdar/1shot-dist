@@ -102,6 +102,10 @@ On a two-step code page, `1shot auto` (and ⇧⌘1) types the code when the entr
 
 The agent cannot pass Touch ID. So the agent cannot change settings or send the password out.
 
+
+> [!IMPORTANT]
+> The default for a new entry is **no auth**. Then the agent can type that password with no human check. 1shot still types only into the matching app, domain and field. For important accounts (bank, email, work, cloud), set **Touch ID** or **Touch ID or Mac password** on the entry. Then a human approves each typing.
+
 ## Check before typing
 
 ```mermaid

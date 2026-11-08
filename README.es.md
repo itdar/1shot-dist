@@ -102,6 +102,10 @@ En una página de código de 2 pasos, `1shot auto` (y ⇧⌘1) escribe el códig
 
 El agente no puede superar Touch ID. Por eso el agente no puede cambiar los ajustes ni enviar la contraseña al exterior.
 
+
+> [!IMPORTANT]
+> El valor predeterminado de un elemento nuevo es **sin autenticación**. Entonces el agente puede escribir esa contraseña sin control humano. Aun así, 1shot solo escribe en la app, el dominio y el campo que coinciden. Para cuentas importantes (banco, correo, trabajo, nube), elija **Touch ID** o **Touch ID o contraseña del Mac** en el elemento. Así una persona aprueba cada escritura.
+
 ## Comprobación previa
 
 ```mermaid

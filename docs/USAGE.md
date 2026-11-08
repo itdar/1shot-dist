@@ -135,7 +135,7 @@ entries:
 | `match.domain` | 포커스된 칸이 든 페이지의 정확한 호스트. `match.app`이 없으면 알려진 브라우저(Safari, Chrome, Edge, Firefox, Brave, Arc)에서만 입력합니다. 기본 포트(443)가 아닌 페이지는 `nas.example.com:5001`처럼 포트를 붙입니다. 포트를 적지 않은 항목은 다른 포트의 페이지에 입력하지 않습니다(localhost 제외) |
 | `match.path` | 페이지 경로 제한 (예: `/login`) |
 | `user` | 아이디 |
-| `auth` | `none` · `biometric` · `password` |
+| `auth` | `none`(기본) · `biometric` · `password`. 중요한 계정은 `biometric` 또는 `password`를 쓰세요(아래 보호 수준) |
 | `field_check` | 칸 종류 검사 (기본 `true`) |
 | `submit` | 비밀번호 입력 후 Return을 누릅니다 (기본 `false`) |
 
@@ -235,6 +235,9 @@ entries:
 | 암호화 보관 파일 | git, iCloud Drive, Dropbox 등 아무 폴더 (다른 계정, 다른 OS 포함) | `1shot sync setup <폴더>` |
 
 ## 보호 수준 (macOS)
+
+> [!IMPORTANT]
+> 기본값 `none`이면 에이전트가 사람 확인 없이 입력합니다. 1shot은 맞는 앱, 도메인, 칸에만 입력하지만, 이 검사가 속는 경우(남은 위험 참고)에는 사람이 막을 기회가 없습니다. 은행, 메일, 회사, 클라우드처럼 중요한 계정은 **`biometric`(Touch ID) 또는 `password`(Touch ID 또는 맥 암호)**로 바꾸세요. 앱에서는 항목의 **입력할 때 인증**에서 고릅니다.
 
 | `auth` | 입력할 때 | 에이전트가 `security` 명령으로 직접 읽기 |
 |---|---|---|
