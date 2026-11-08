@@ -162,6 +162,10 @@ sequenceDiagram
 | [История изменений](https://github.com/itdar/1shot-dist/releases) | Изменения по версиям (GitHub Releases) |
 | [Политика конфиденциальности](PRIVACY.md) · [Условия использования](TERMS.md) · [Список лицензий](THIRD_PARTY_LICENSES.md) | |
 
+## Поддержка
+
+1shot бесплатен. Если 1shot экономит вам время, вы можете поддержать разработку на [GitHub Sponsors](https://github.com/sponsors/itdar).
+
 ## License
 
 Проприетарное ПО. Все права защищены. Копии версий 0.8.5 и ниже, опубликованные под лицензией MIT, сохраняют эту лицензию. См. [LICENSE](LICENSE).

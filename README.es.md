@@ -162,6 +162,10 @@ Comandos detallados: "Sincronización entre dispositivos" en el [manual de uso](
 | [Registro de cambios](https://github.com/itdar/1shot-dist/releases) | Cambios por versión (GitHub Releases) |
 | [Política de privacidad](PRIVACY.md) · [Términos de uso](TERMS.md) · [Lista de licencias](THIRD_PARTY_LICENSES.md) | |
 
+## Apoyo
+
+1shot es gratis. Si 1shot le ahorra tiempo, puede apoyar el desarrollo en [GitHub Sponsors](https://github.com/sponsors/itdar).
+
 ## License
 
 Software propietario. Todos los derechos reservados. Las copias de la versión 0.8.5 y anteriores publicadas bajo la licencia MIT conservan esa licencia. Consulta [LICENSE](LICENSE).

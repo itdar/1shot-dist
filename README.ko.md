@@ -162,6 +162,10 @@ sequenceDiagram
 | [변경 기록](https://github.com/itdar/1shot-dist/releases) | 버전별 변경 (GitHub Releases) |
 | [개인정보 처리방침](PRIVACY.md) · [이용 약관](TERMS.md) · [라이선스 목록](THIRD_PARTY_LICENSES.md) | |
 
+## 후원
+
+1shot은 무료입니다. 도움이 되었다면 다음 페이지에서 개발을 후원할 수 있습니다: [GitHub Sponsors](https://github.com/sponsors/itdar).
+
 ## License
 
 독점 소프트웨어입니다(All rights reserved). 0.8.5 이하 버전 중 MIT 라이선스로 공개된 사본은 그 라이선스를 따릅니다. [LICENSE](LICENSE)를 보세요.

@@ -162,6 +162,10 @@ For detailed commands, see "Sync between devices" in the [User guide](docs/USAGE
 | [Changelog](https://github.com/itdar/1shot-dist/releases) | Changes for each version (GitHub Releases) |
 | [Privacy policy](PRIVACY.md) · [Terms of use](TERMS.md) · [License list](THIRD_PARTY_LICENSES.md) | |
 
+## Support
+
+1shot is free. If 1shot saves you time, you can support development on [GitHub Sponsors](https://github.com/sponsors/itdar).
+
 ## License
 
 Proprietary. All rights reserved. Copies of versions 0.8.5 and earlier that were published under the MIT License keep that license. See [LICENSE](LICENSE).

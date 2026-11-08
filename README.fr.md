@@ -162,6 +162,10 @@ Commandes détaillées : [Guide d'utilisation](docs/USAGE.md), section « Synchr
 | [Historique des changements](https://github.com/itdar/1shot-dist/releases) | Changements par version (GitHub Releases) |
 | [Politique de confidentialité](PRIVACY.md) · [Conditions d'utilisation](TERMS.md) · [Liste des licences](THIRD_PARTY_LICENSES.md) | |
 
+## Soutien
+
+1shot est gratuit. Si 1shot vous fait gagner du temps, vous pouvez soutenir le développement sur [GitHub Sponsors](https://github.com/sponsors/itdar).
+
 ## License
 
 Logiciel propriétaire. Tous droits réservés. Les copies des versions 0.8.5 et antérieures publiées sous licence MIT conservent cette licence. Voir [LICENSE](LICENSE).
